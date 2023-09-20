@@ -22,4 +22,5 @@ return {
     end,
   },
   { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 }
