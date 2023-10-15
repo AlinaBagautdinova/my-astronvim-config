@@ -8,13 +8,14 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.vue"},
-  { import = "astrocommunity.pack.typescript"},
-  { import = "astrocommunity.pack.nix"},
-  { import = "astrocommunity.editing-support.multicursors-nvim"},
-  { import = "astrocommunity.lsp.inc-rename-nvim"},
+  { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.nix" },
+  { import = "astrocommunity.editing-support.multicursors-nvim" },
+  { import = "astrocommunity.lsp.inc-rename-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
-  { import = "astrocommunity.pack.full-dadbod",
+  {
+    import = "astrocommunity.pack.full-dadbod",
     init = function()
       -- Your DBUI configuration
       -- vim.g.db_ui_disable_mappings = 1
@@ -25,17 +26,15 @@ return {
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   {
     "ray-x/go.nvim",
-    dependencies = {  -- optional packages
+    dependencies = { -- optional packages
       "ray-x/guihua.lua",
       "neovim/nvim-lspconfig",
       "nvim-treesitter/nvim-treesitter",
     },
-    config = function()
-      require("go").setup()
-    end,
-    event = {"CmdlineEnter"},
-    ft = {"go", 'gomod'},
-    build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
+    config = function() require("go").setup() end,
+    event = { "CmdlineEnter" },
+    ft = { "go", "gomod" },
+    build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
   },
   {
     "folke/noice.nvim",
@@ -50,9 +49,9 @@ return {
       --   `nvim-notify` is only needed, if you want to use the notification view.
       --   If not available, we use `mini` as the fallback
       "rcarriga/nvim-notify",
-    }
+    },
   },
-  { import = "astrocommunity.color.transparent-nvim" },
+  -- { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.debugging.telescope-dap-nvim" },
   { import = "astrocommunity.debugging.nvim-bqf" },
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
