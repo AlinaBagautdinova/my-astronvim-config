@@ -52,6 +52,11 @@ return {
       "rcarriga/nvim-notify",
     }
   },
+  { import = "astrocommunity.color.transparent-nvim" },
+  { import = "astrocommunity.debugging.telescope-dap-nvim" },
+  { import = "astrocommunity.debugging.nvim-bqf" },
+  { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
+  { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
   -- {
   --   "folke/todo-comments.nvim",
   --   dependencies = { "nvim-lua/plenary.nvim" },
