@@ -15,6 +15,7 @@ return {
   { import = "astrocommunity.lsp.inc-rename-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   {
+    -- https://www.youtube.com/watch?v=NhTPVXP8n7w&list=PLmcTCfaoOo_grgVqU7UbOx7_RG9kXPgEr&index=16&ab_channel=DevOpsToolbox
     import = "astrocommunity.pack.full-dadbod",
     init = function()
       -- Your DBUI configuration
@@ -51,11 +52,19 @@ return {
       "rcarriga/nvim-notify",
     },
   },
-  -- { import = "astrocommunity.color.transparent-nvim" },
+  { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.debugging.telescope-dap-nvim" },
   { import = "astrocommunity.debugging.nvim-bqf" },
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
+  { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  -- { import = "astrocommunity.editing-support.treesj" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.diagnostics.lsp_lines-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
+  { import = "astrocommunity.motion.marks-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
+  -- { import = "astrocommunity.note-taking.neorg" }, -- Печатает ошибки прямо на той строчке где ошибка
+  -- { import = "astrocommunity.motion.harpoon" }, -- Печатает ошибки прямо на той строчке где ошибка
+  -- { import = "astrocommunity.indent.mini-indentscope" }, --Анимация
   -- {
   --   "folke/todo-comments.nvim",
   --   dependencies = { "nvim-lua/plenary.nvim" },
@@ -63,7 +72,7 @@ return {
   --     -- your configuration comes here
   --     -- or leave it empty to use the default settings
   --     -- refer to the configuration section below
-  --   }
+  --   },
   -- },
   -- {
   --   "folke/trouble.nvim",
