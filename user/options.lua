@@ -1,14 +1,22 @@
 vim.api.nvim_create_user_command("Pwd", 'let @+=expand("%:p") | echo expand("%:p")', {})
 
-local function stage(t)
+local function myRepl(t)
   if t.range ~= 0 then
     vim.cmd "'<,'>s/null/nil/ge | '<,'>s/\\[/\\{/ge | '<,'>s/\\]/\\}/ge"
   else
     vim.cmd "%s/null/nil/ge | %s/\\[/\\{/ge | %s/\\]/\\}/ge"
   end
 end
+vim.api.nvim_create_user_command("MyRepl", function(t) myRepl(t) end, { range = true })
 
-vim.api.nvim_create_user_command("MyRepl", function(t) stage(t) end, { range = true })
+local function myReplQu(t)
+  if t.range ~= 0 then
+    vim.cmd "'<,'>s/\"/'/ge"
+  else
+    vim.cmd "%s/\"/'/ge"
+  end
+end
+vim.api.nvim_create_user_command("MyReplQu", function(t) myReplQu(t) end, { range = true })
 
 return {
   opt = {
