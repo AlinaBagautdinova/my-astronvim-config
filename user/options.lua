@@ -2,9 +2,9 @@ vim.api.nvim_create_user_command("Pwd", 'let @+=expand("%:p") | echo expand("%:p
 
 local function stage(t)
   if t.range ~= 0 then
-    vim.cmd "'<,'>s/null/nil/g | '<,'>s/\\[/\\{/g | '<,'>s/\\]/\\}/g"
+    vim.cmd "'<,'>s/null/nil/ge | '<,'>s/\\[/\\{/ge | '<,'>s/\\]/\\}/ge"
   else
-    vim.cmd "%s/null/nil/g | %s/\\[/\\{/g | %s/\\]/\\}/g"
+    vim.cmd "%s/null/nil/ge | %s/\\[/\\{/ge | %s/\\]/\\}/ge"
   end
 end
 
