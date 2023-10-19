@@ -71,7 +71,7 @@ return {
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   -- { import = "astrocommunity.editing-support.treesj" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { import = "astrocommunity.diagnostics.lsp_lines-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
+  -- { import = "astrocommunity.diagnostics.lsp_lines-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
   { import = "astrocommunity.motion.marks-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
   { "Darazaki/indent-o-matic" },
   -- { import = "astrocommunity.note-taking.neorg" }, -- Печатает ошибки прямо на той строчке где ошибка
@@ -122,4 +122,5 @@ return {
   --     vim.api.nvim_set_var("VM_maps", { Undo = "u", Redo = "<C-r>" })
   --   end,
   -- },
+  --
 }
