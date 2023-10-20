@@ -74,6 +74,7 @@ return {
   -- { import = "astrocommunity.diagnostics.lsp_lines-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
   { import = "astrocommunity.motion.marks-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
   { "Darazaki/indent-o-matic" },
+  { import = "astrocommunity.motion.hop-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
   -- { import = "astrocommunity.note-taking.neorg" }, -- Печатает ошибки прямо на той строчке где ошибка
   -- { import = "astrocommunity.motion.harpoon" }, -- Печатает ошибки прямо на той строчке где ошибка
   -- { import = "astrocommunity.indent.mini-indentscope" }, --Анимация
