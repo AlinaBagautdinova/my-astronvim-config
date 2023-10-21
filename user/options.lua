@@ -18,6 +18,8 @@ local function myReplQu(t)
 end
 vim.api.nvim_create_user_command("MyReplQu", function(t) myReplQu(t) end, { range = true })
 
+vim.api.nvim_set_keymap("x", "<C-t>", ":po<CR>", { noremap = true })
+
 return {
   opt = {
     -- Использовать пробелы вместо табуляций

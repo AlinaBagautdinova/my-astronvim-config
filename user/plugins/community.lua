@@ -1,3 +1,5 @@
+vim.g.go_def_mapping_enabled = 0
+
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.rust" },
@@ -63,7 +65,7 @@ return {
       "rcarriga/nvim-notify",
     },
   },
-  -- { import = "astrocommunity.color.transparent-nvim" },
+  { import = "astrocommunity.color.transparent-nvim" },
   { import = "astrocommunity.debugging.telescope-dap-nvim" },
   { import = "astrocommunity.debugging.nvim-bqf" },
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
@@ -90,6 +92,9 @@ return {
     opts = {},
     ft = { "go", "gomod" },
     config = function() end,
+    keys = {
+      noremap = false,
+    },
   },
   -- { import = "astrocommunity.note-taking.neorg" }, -- Печатает ошибки прямо на той строчке где ошибка
   -- { import = "astrocommunity.motion.harpoon" }, -- Печатает ошибки прямо на той строчке где ошибка
