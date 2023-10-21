@@ -88,7 +88,8 @@ return {
     config = function() end,
   },
   {
-    "fatih/vim-go",
+    -- "fatih/vim-go",
+    "back2nix/vim-go",
     opts = {},
     ft = { "go", "gomod" },
     config = function() end,
