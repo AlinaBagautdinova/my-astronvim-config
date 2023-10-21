@@ -73,9 +73,24 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- { import = "astrocommunity.diagnostics.lsp_lines-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
   { import = "astrocommunity.motion.marks-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
-  { "Darazaki/indent-o-matic" },
+  -- {
+  --   "Darazaki/indent-o-matic",
+  --   opts = {},
+  --   ft = { "*" },
+  -- },
   { import = "astrocommunity.motion.hop-nvim" }, -- Печатает ошибки прямо на той строчке где ошибка
-  { "vim-test/vim-test" },
+  {
+    "vim-test/vim-test",
+    opts = {},
+    ft = { "go", "gomod" },
+    config = function() end,
+  },
+  {
+    "fatih/vim-go",
+    opts = {},
+    ft = { "go", "gomod" },
+    config = function() end,
+  },
   -- { import = "astrocommunity.note-taking.neorg" }, -- Печатает ошибки прямо на той строчке где ошибка
   -- { import = "astrocommunity.motion.harpoon" }, -- Печатает ошибки прямо на той строчке где ошибка
   -- { import = "astrocommunity.indent.mini-indentscope" }, --Анимация
