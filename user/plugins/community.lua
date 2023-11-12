@@ -88,16 +88,15 @@ return {
     ft = { "go", "gomod" },
     config = function() end,
   },
-  {
-    -- "fatih/vim-go",
-    "back2nix/vim-go",
-    opts = {},
-    ft = { "go", "gomod" },
-    config = function() end,
-    keys = {
-      noremap = false,
-    },
-  },
+  -- {
+  --   "back2nix/vim-go",
+  --   opts = {},
+  --   ft = { "go", "gomod" },
+  --   config = function() end,
+  --   keys = {
+  --     noremap = false,
+  --   },
+  -- },
   -- { import = "astrocommunity.note-taking.neorg" }, -- Печатает ошибки прямо на той строчке где ошибка
   -- { import = "astrocommunity.motion.harpoon" }, -- Печатает ошибки прямо на той строчке где ошибка
   -- { import = "astrocommunity.indent.mini-indentscope" }, --Анимация
