@@ -3,6 +3,8 @@ vim.g.go_def_mapping_enabled = 0
 
 return {
   "AstroNvim/astrocommunity",
+  { import = "astrocommunity.git.octo-nvim" },
+  { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.go" },
@@ -87,6 +89,12 @@ return {
     opts = {},
     ft = { "go", "gomod" },
     config = function() end,
+  },
+  {
+    "AstroNvim/astrolsp",
+    opts = {
+      -- set configuration options  as described below
+    },
   },
   -- {
   --   "back2nix/vim-go",
