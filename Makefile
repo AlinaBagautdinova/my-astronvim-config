@@ -1,2 +1,2 @@
 sync:
-	rsync -avP ~/.config/nvim/lua/plugins/ .
+	rsync -avP ~/.config/nvim/lua/ ./lua
